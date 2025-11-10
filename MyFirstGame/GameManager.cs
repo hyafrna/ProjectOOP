@@ -52,7 +52,7 @@ namespace MyFirstGame
             // Store the graphics device so we can use it in Update()
             this.graphicsDevice = graphicsDevice;
             
-            // Load textures (fawwaz)
+            // Load textures (fawwaz 2)
             playerTexture = content.Load<Texture2D>("player_ship");
             // projectileTexture = content.Load<Texture2D>("bullet");
             // scoutTexture = content.Load<Texture2D>("alien_scout");
