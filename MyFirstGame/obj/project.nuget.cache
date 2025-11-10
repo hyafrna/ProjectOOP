@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HXVunvz0bMI=",
+  "dgSpecHash": "WbYsF0PHW/k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fawwa\\Documents\\GitHub\\ProjectOOP\\MyFirstGame\\MyFirstGame.csproj",
+  "projectFilePath": "C:\\Users\\fawwa\\Downloads\\ProjectOOP\\MyFirstGame\\MyFirstGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fawwa\\.nuget\\packages\\monogame.content.builder.task\\3.8.4.1\\monogame.content.builder.task.3.8.4.1.nupkg.sha512",
     "C:\\Users\\fawwa\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.4.1\\monogame.framework.desktopgl.3.8.4.1.nupkg.sha512",

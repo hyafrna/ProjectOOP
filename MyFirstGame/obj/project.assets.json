@@ -301,11 +301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fawwa\\Documents\\GitHub\\ProjectOOP\\MyFirstGame\\MyFirstGame.csproj",
+      "projectUniqueName": "C:\\Users\\fawwa\\Downloads\\ProjectOOP\\MyFirstGame\\MyFirstGame.csproj",
       "projectName": "MyFirstGame",
-      "projectPath": "C:\\Users\\fawwa\\Documents\\GitHub\\ProjectOOP\\MyFirstGame\\MyFirstGame.csproj",
+      "projectPath": "C:\\Users\\fawwa\\Downloads\\ProjectOOP\\MyFirstGame\\MyFirstGame.csproj",
       "packagesPath": "C:\\Users\\fawwa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fawwa\\Documents\\GitHub\\ProjectOOP\\MyFirstGame\\obj\\",
+      "outputPath": "C:\\Users\\fawwa\\Downloads\\ProjectOOP\\MyFirstGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
