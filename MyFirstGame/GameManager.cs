@@ -2,6 +2,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content; // For ContentManager
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MyFirstGame
 {
@@ -23,6 +24,8 @@ namespace MyFirstGame
         private Player player;
         private List<Level> levels;
         private List<Projectile> projectiles;
+        private List<Projectile> enemyProjectiles;
+        public List<Projectile> EnemyProjectile { get { return enemyProjectiles; } }
 
         // Level tracking
         private int currentLevelIndex;
@@ -37,12 +40,15 @@ namespace MyFirstGame
         // private Texture2D fighterTexture;
         // private Texture2D bossTexture;
         private Texture2D placeholderTexture;
+        private Texture2D enemyProjectileTexture;
+        public Texture2D EnemyProjectileTexture { get { return enemyProjectileTexture; } }
 
         public GameManager()
         {
             CurrentState = GameState.Playing; // Start playing immediately
             levels = new List<Level>();
             projectiles = new List<Projectile>();
+            enemyProjectiles = new List<Projectile>();
             currentLevelIndex = 0;
         }
 
@@ -61,6 +67,7 @@ namespace MyFirstGame
 
             placeholderTexture = new Texture2D(graphicsDevice, 1, 1);
             placeholderTexture.SetData(new Color[] { Color.White });
+
 
 
 

@@ -19,6 +19,8 @@ namespace MyFirstGame
         // Helper properties for game logic
         public bool IsActive { get; set; }
         private Vector2 direction;
+        private Vector2 startPosition;
+        private Vector2 direction1;
 
         // Bounding box for collision detection
         public Rectangle BoundingBox
@@ -38,7 +40,7 @@ namespace MyFirstGame
             this.Owner = owner;
             this.speed = speed;
             this.Size = new Vector2(4, 10); // A 4x10 pixel rectangle
-            
+
             // Normalize the direction to ensure constant speed
             if (direction != Vector2.Zero)
             {
