@@ -47,7 +47,7 @@ namespace MyFirstGame
             Position = newPosition;
 
             // Attack logic (like spawning projectiles) could be added here
-            // e.g., if (attackTimer > 0) { ... }
+            // e.g., if (attackTimer > 0) { ... } meowmeow
         }
     }
 }

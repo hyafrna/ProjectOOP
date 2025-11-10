@@ -67,5 +67,6 @@ namespace MyFirstGame
                 Color.Red // Enemies will be red squares
             );
         }
+        // tutututu
     }
 }
