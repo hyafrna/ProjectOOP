@@ -33,3 +33,4 @@ Content/obj/
 
 # User-specific files
 *.rsuser
+.fake

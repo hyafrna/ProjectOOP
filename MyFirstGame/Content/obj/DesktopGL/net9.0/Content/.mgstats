@@ -1,7 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-<<<<<<< HEAD
-"D:/Afiq/ProjectOOP Clone/ProjectOOP/MyFirstGame/Content/UIFont.spritefont","D:/Afiq/ProjectOOP Clone/ProjectOOP/MyFirstGame/Content/bin/DesktopGL/Content/UIFont.xnb","FontDescriptionProcessor","SpriteFontContent",488,37913,1.6214626
-=======
-"C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/player_ship.png","C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/Content/player_ship.xnb","TextureProcessor","Texture2DContent",118647,999577,0.1713138
-"C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/UIFont.spritefont","C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/Content/UIFont.xnb","FontDescriptionProcessor","SpriteFontContent",488,37913,0.2644565
->>>>>>> 5d2157aeb01600d8e489c1f15badfd76bee44f27
+"C:/Users/fawwa/Documents/GitHub/ProjectOOP/MyFirstGame/Content/player_ship.png","C:/Users/fawwa/Documents/GitHub/ProjectOOP/MyFirstGame/Content/bin/DesktopGL/Content/player_ship.xnb","TextureProcessor","Texture2DContent",118647,999577,0.3203924
+"C:/Users/fawwa/Documents/GitHub/ProjectOOP/MyFirstGame/Content/UIFont.spritefont","C:/Users/fawwa/Documents/GitHub/ProjectOOP/MyFirstGame/Content/bin/DesktopGL/Content/UIFont.xnb","FontDescriptionProcessor","SpriteFontContent",488,37913,0.2248134
