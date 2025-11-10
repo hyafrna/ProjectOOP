@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -18,6 +19,8 @@ namespace MyFirstGame
         public string Name { get { return name; } }
         public int HP { get { return hp; } }
         public bool IsActive { get; set; }
+
+        protected List<Projectile> enemyProjectiles;
 
         // Bounding box for collision detection
         public Rectangle BoundingBox
@@ -40,6 +43,8 @@ namespace MyFirstGame
             this.Position = startPosition;
             this.IsActive = true;
             this.Size = new Vector2(32, 32); // Default 32x32 square
+
+            enemyProjectiles = new List<Projectile>();
         }
 
         // Abstract method for AI and movement
