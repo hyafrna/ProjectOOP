@@ -6,7 +6,7 @@ namespace MyFirstGame
     public class AlienFighter : Enemy
     {
         /// <summary>
-        /// Constructor for the Alien Fighter.
+        /// Constructor for the Alien Fighter.mm
         /// </summary>
         /// <param name="texture">The sprite texture for this enemy.</param>
         /// <param name="startPosition">Its starting (X, Y) coordinates.</param>
