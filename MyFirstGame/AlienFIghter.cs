@@ -9,7 +9,7 @@ namespace MyFirstGame
         private float shootTimer = 0f;
         private float shootCooldown = 2f;
         /// <summary>
-        /// Constructor for the Alien Fighter.
+        /// Constructor for the Alien Fighter.mm
         /// </summary>
         /// <param name="texture">The sprite texture for this enemy.</param>
         /// <param name="startPosition">Its starting (X, Y) coordinates.</param>
