@@ -3,6 +3,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content; // For ContentManager
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using System.Runtime.CompilerServices;
+using System;
 
 namespace MyFirstGame
 {
@@ -26,6 +28,8 @@ namespace MyFirstGame
         private List<Projectile> projectiles;
         private List<Projectile> enemyProjectiles;
         public List<Projectile> EnemyProjectile { get { return enemyProjectiles; } }
+        public List<PowerUp> powerUps= new List<PowerUp>();
+        private Texture2D powerUpTexture;
 
         // Level tracking
         private int currentLevelIndex;
@@ -64,6 +68,8 @@ namespace MyFirstGame
             // scoutTexture = content.Load<Texture2D>("alien_scout");
             // fighterTexture = content.Load<Texture2D>("alien_fighter");
             // bossTexture = content.Load<Texture2D>("alien_dragon_boss");
+
+            powerUpTexture = content.Load<Texture2D>("powerup_heart");
 
             placeholderTexture = new Texture2D(graphicsDevice, 1, 1);
             placeholderTexture.SetData(new Color[] { Color.White });
@@ -105,6 +111,19 @@ namespace MyFirstGame
                 // 2. Update Current Level (which updates all enemies)
                 Level currentLevel = levels[currentLevelIndex];
                 currentLevel.Update(gameTime, player);
+
+                if (currentLevel.IsComplete)
+                {
+                    currentLevelIndex++;
+                    if (currentLevelIndex< levels.Count)
+                    {
+                        levels[currentLevelIndex].Load();
+                    }
+                }
+                else
+                {
+                    // add current state of victory / display congratulatory screen
+                }
 
                 // 3. Update Projectiles (pass graphicsDevice as fixed)
                 foreach (var p in projectiles)
@@ -160,6 +179,32 @@ namespace MyFirstGame
             {
                 // (Logic for MainMenu or GameOver screen)
             }
+        }
+
+        // method for SpawnPowerUp
+        private Random random = new Random();
+        public void SpawnPowerUp(Vector2 position)
+        {
+            PowerUpType type;
+            int typeRand = random.Next(2);
+            if (typeRand == 0)
+            {
+                type = PowerUpType.Health;
+            }
+            else
+            {
+                type = PowerUpType.WeaponUpgrade;
+            }
+            
+            int powerUpValue = 50;
+            var newPowerUp = new PowerUp(
+                    powerUpTexture,
+                    position,
+                    type,
+                    powerUpValue
+            );
+
+            this.powerUps.Add(newPowerUp);
         }
 
         // This is a PUBLIC method. No "override".

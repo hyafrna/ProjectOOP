@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -6,6 +7,9 @@ namespace MyFirstGame
 {
     public abstract class Enemy
     {
+        protected GameManager gameManager;
+        private static Random random= new Random();
+
         public Texture2D Texture { get; protected set; }
         public Vector2 Position { get; protected set; }
 
@@ -59,6 +63,11 @@ namespace MyFirstGame
             {
                 this.IsActive = false;
                 // Add logic here for score, explosions, etc.
+                int randomNumber = random.Next(10);
+                if (randomNumber == 1)
+                {
+                    gameManager.SpawnPowerUp(this.Position);
+                }
             }
         }
 

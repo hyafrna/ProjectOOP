@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MyFirstGame
 {
@@ -46,8 +47,14 @@ namespace MyFirstGame
             else if (LevelNumber == 2)
             {
                 // Spawn Alien Fighters [cite: 41]
-                Enemies.Add(new AlienFighter(alienFighterTexture, new Vector2(100, 150)));
+                Enemies.Add(new AlienFighter(alienFighterTexture, new Vector2(100, 150), new GameManager()));
                 Enemies.Add(new AlienScout(alienScoutTexture, new Vector2(300, 100)));
+            }
+            else if (LevelNumber == 3)
+            {
+                Enemies.Add(new AlienFighter(alienFighterTexture,new Vector2(100,150), new GameManager()));
+                Enemies.Add(new AlienFighter(alienFighterTexture,new Vector2(120,100), new GameManager()));
+                Enemies.Add(new AlienScout(alienScoutTexture,new Vector2(300,50)));
             }
             else if (LevelNumber == 4)
             {
